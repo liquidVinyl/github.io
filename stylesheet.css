@@ -1,0 +1,21 @@
+#box{
+  height: 300px;
+  width: 300px;
+  display: inline, block;
+  position:absolute;
+  background-color: black;
+}
+
+#witb{
+  width: 100px;
+  height; auto;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: none;
+}
+
+#pwhatsin{
+  color: Red;
+  font-size: 20px;
+  text-align: center;
+}
