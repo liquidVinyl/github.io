@@ -1,16 +1,11 @@
 
-var rawDate = new Date();
-  console.log(rawDate);
-var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-  console.log(dayList);
-var day = rawDate.getDay();
-  console.log(day);
-var hours = rawDate.getHours();
-  console.log(hours);
-var minutes = rawDate.getMinutes();
-  console.log(minutes);
-var seconds = rawDate.getSeconds();
-  console.log(seconds);
+function timeKeeper (){
+  var rawDate = new Date();
+  var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var day = rawDate.getDay();
+  var hours = rawDate.getHours();
+  var minutes = rawDate.getMinutes();
+  var seconds = rawDate.getSeconds();
 
 
 if(hours>12){
@@ -46,18 +41,35 @@ else{
 
 
 var clock = "Today is : " + dayList[day] + ": "+ "Current time is : " + stdTime + " : " + addZeroToMinutes + " : " + addZeroToSeconds + " " + ampm;
-  console.log(clock)
+
+  $("#clock").html(clock);
+}
 
 $(document).ready(function(){
-  $("body").append(clock);
-})
+   setInterval('timeKeeper()', 1000);
+});
 
 
+//testing
+var rawDate = new Date();
+var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var day = rawDate.getDay();
+var hours = rawDate.getHours();
+var minutes = rawDate.getMinutes();
+var seconds = rawDate.getSeconds();
+
+console.log(dayList);
+
+console.log(day);
+
+console.log(hours);
+
+console.log(minutes);
+
+console.log(seconds);
 
 
-
-
-
+//$( "body" ).replaceWith( "<body></body>");
 //document.getElementById('mydiv').innerHTML = '<span class="prego">Something</span>';
 
 
