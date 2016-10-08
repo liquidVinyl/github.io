@@ -3,7 +3,7 @@
 $(document).ready(function(){
   $("#timeback").click(function(){
       // prompts for day of the week
-      x = prompt();
+      x = prompt("What day would you like to visit?");
 
       switch (x) {
         case "Sunday":
