@@ -1,0 +1,70 @@
+function timeKeeper (){
+  var rawDate = new Date();
+  var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var day = rawDate.getDay();
+  var hours = rawDate.getHours();
+  var minutes = rawDate.getMinutes();
+  var seconds = rawDate.getSeconds();
+
+
+if(hours>12){
+    var stdTime = hours-12;
+}
+else {
+  stdTime = hours;
+};
+
+
+if (minutes < 10){
+  var addZeroToMinutes = "0" + minutes;
+}
+else{
+  addZeroToMinutes = minutes;
+};
+
+
+if (seconds<10){
+  var addZeroToSeconds = "0" + seconds;
+}
+else{
+  addZeroToSeconds = seconds;
+};
+
+
+if(hours>12){
+  var ampm= "PM";
+}
+else{
+  ampm = "AM";
+};
+
+
+var clock = "Home Time is: " + dayList[day] + " " + stdTime + " : " + addZeroToMinutes + " : " + addZeroToSeconds + " " + ampm;
+
+$(document).ready(function(){
+  $("#clockh1").html(clock);
+});
+}
+$(document).ready(function(){
+   setInterval('timeKeeper()', 1000);
+});
+
+
+
+//testing
+var rawDate = new Date();
+var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var day = rawDate.getDay();
+var hours = rawDate.getHours();
+var minutes = rawDate.getMinutes();
+var seconds = rawDate.getSeconds();
+
+console.log(dayList);
+
+console.log(day);
+
+console.log(hours);
+
+console.log(minutes);
+
+console.log(seconds);

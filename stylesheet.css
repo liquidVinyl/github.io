@@ -1,21 +1,47 @@
-#box{
-  height: 300px;
-  width: 300px;
-  display: inline, block;
-  position:absolute;
-  background-color: black;
+#timeback{
+  position: relative;;
+  left: 37%;
 }
 
-#witb{
-  width: 100px;
-  height; auto;
-  padding-top: 50px;
-  padding-left: 100px;
+#timehome{
+  position: relative;;
+  left: 42%;
   display: none;
 }
 
-#pwhatsin{
-  color: Red;
-  font-size: 20px;
+#donttalk{
+  text-align:center;
+  color: red;
+}
+
+h1{
   text-align: center;
+}
+h2{
+  text-align: center;
+}
+#clockh2{
+  padding: 20px;
+}
+
+
+#div2 {
+  height:auto;
+  width: auto;
+  position: relative;;;
+  color: pink;
+}
+
+#div3 {
+  height:auto;
+  width: auto;
+  position: relative;;;
+  color: blue;
+  display: none;
+}
+
+#wrapper
+{
+height: 600px;
+width:600px;
 }
