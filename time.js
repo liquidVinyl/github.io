@@ -62,6 +62,8 @@ var hours1 = rawDate1.getHours();
 var minutes1 = rawDate1.getMinutes();
 var seconds1 = rawDate1.getSeconds();
 
+console.log(rawDate1)
+
 console.log(dayList1);
 
 console.log(day1);

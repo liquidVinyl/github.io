@@ -3,29 +3,31 @@
 $(document).ready(function(){
   $("#timeback").click(function(){
       // prompts for day of the week
-      x = prompt("What day would you like to visit?");
+      x = prompt("What Day?")
 
-      switch (x) {
-        case "Sunday":
+      //converts day in number for array and makes case insensitive
+      switch (x.toUpperCase()) {
+        case "SUNDAY":
           x=0;
         break;
-        case "Monday":
+        case "MONDAY":
           x=1;
         break;
-        case "Tuesday":
+        case "TUESDAY":
           x=2;
         break;
-        case "Wednesday":
+        case "WEDNESDAY":
           x=3;
         break;
-        case "Thursday":
+        case "THURSDAY":
           x=4;
         break;
-        case "Friday":
+        case "FRIDAY":
           x=5;
         break;
-        case "Saturday":
+        case "SATURDAY":
           x=6;
+        break;
         default: x = 7
       }
 
@@ -36,6 +38,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#timehome").click(function(){
+      $("#clockh2").html("Calculating");
     $("#div3").hide();
     $("#timehome").hide();
   })
