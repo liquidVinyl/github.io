@@ -1,12 +1,13 @@
 #timeback{
-  position: relative;;
-  left: 32.5%;
+  position:relative;
+  left: 42%;
   opacity: 100%;
+
 }
 
 #timehome{
   position: relative;;
-  left: 32.25%;
+  left: 42%;
   display:none;
 }
 
@@ -19,11 +20,11 @@
 h1{
   text-align: center;
 }
-h2 {
+#clockh1 {
   text-align: center;
 }
 #clockh2{
-  padding: 20px;
+  text-align: center;
 }
 
 
@@ -31,30 +32,36 @@ h2 {
   height:auto;
   width: auto;
   position: relative;;;
-  color: blue;
+  color: #66ff33;
   text-shadow: 1px 1px black;
+  margin-top: 110px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 38px;
 }
 
 #div3 {
   height:auto;
   width: auto;
   position: relative;;;
-  color: blue;
+  color: #66ff33;
   text-shadow: 1px 1px black;
   display: none;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 100px;
+  font-size: 51px;
 }
 
 #wrapper{
-height: 600px;
-width:463px;
+height: 1920px;
+width:1080px;
 margin:auto;
 }
 
 #bttf{
   background-image: url("bttfsmall.jpg");
-  opacity: 0.5;
-  height: 600px;
-  width:463px;
+  <!--opacity: 0.5;-->
+  height: 1920px;
+  width:1080px;
   position:absolute;
 }
 p{
@@ -63,4 +70,28 @@ p{
 }
 button {
   background-color: yellow;
+}
+
+#button{
+  margin-top:452px;
+  position: relative;;;
+  left: 43.57%;
+  height: 138px;
+  width: 138px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+#button2 {
+  margin-top:-45px;
+  position: relative;;;
+  left: 38%;
+  height: 35px;
+  width: 260px;
+  background-color: red;
+  text-align: center;
+  font-size: 27px;
+  color: yellow;
+
+
 }

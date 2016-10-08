@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-  $("#timeback").click(function(){
+  $("#button").click(function(){
       // prompts for day of the week
       x = prompt("What Day?")
 
@@ -32,14 +32,24 @@ $(document).ready(function(){
       }
 
     $("#div3").show();
-    $("#timehome").show();
+    $("#button2").show();
   })
 });
 
 $(document).ready(function(){
-  $("#timehome").click(function(){
-      $("#clockh2").html("Calculating");
+  $("#button2").click(function(){
     $("#div3").hide();
-    $("#timehome").hide();
+    $(this).hide();
+  })
+});
+
+$(document).ready(function(){
+  $("#button").click(function(){
+    $("#div2").hide();
+  })
+});
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("#div2").show();
   })
 });

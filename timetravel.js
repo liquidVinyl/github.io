@@ -48,7 +48,7 @@ function timeTraveler (){
     ampm = "AM";
   };
 
-var clock = "Current Time : " + dayList[x] + " " + stdTime + " : " + addZeroToMinutes + " : " + addZeroToSeconds + " " + ampm;
+var clock = dayList[x] + " " + stdTime + " : " + addZeroToMinutes + " : " + addZeroToSeconds + " " + ampm;
 
 //adds the clock to HTML
 

@@ -42,7 +42,7 @@ else{
 };
 
 
-var clock1 = "Home Time is: " + dayList1[day1] + " " + stdTime1 + " : " + addZeroToMinutes1 + " : " + addZeroToSeconds1 + " " + ampm1;
+var clock1 = dayList1[day1] + " " + stdTime1 + " : " + addZeroToMinutes1 + " : " + addZeroToSeconds1 + " " + ampm1;
 
 $(document).ready(function(){
   $("#clockh1").html(clock1);
