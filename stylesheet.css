@@ -6,7 +6,7 @@
 #timehome{
   position: relative;;
   left: 42%;
-  display: none;
+  display:none;
 }
 
 #donttalk{
@@ -38,7 +38,6 @@ h2{
   position: relative;;;
   color: blue;
   display: none;
-}
 
 #wrapper
 {

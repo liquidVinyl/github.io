@@ -1,48 +1,51 @@
 function timeKeeper (){
-  var rawDate = new Date();
-  var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-  var day = rawDate.getDay();
-  var hours = rawDate.getHours();
-  var minutes = rawDate.getMinutes();
-  var seconds = rawDate.getSeconds();
+  var rawDate1 = new Date();
+  var dayList1 = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var day1 = rawDate1.getDay();
+  var hours1 = rawDate1.getHours();
+  var minutes1 = rawDate1.getMinutes();
+  var seconds1 = rawDate1.getSeconds();
 
+  if(hours1 === 0){
+    var stdTime1 = 12;
+  }
 
-if(hours>12){
-    var stdTime = hours-12;
+else if(hours1>12){
+    var stdTime1 = hours1-12;
 }
 else {
-  stdTime = hours;
+  stdTime1 = hours1;
 };
 
 
-if (minutes < 10){
-  var addZeroToMinutes = "0" + minutes;
+if (minutes1 < 10){
+  var addZeroToMinutes1 = "0" + minutes1;
 }
 else{
-  addZeroToMinutes = minutes;
+  addZeroToMinutes1 = minutes1;
 };
 
 
-if (seconds<10){
-  var addZeroToSeconds = "0" + seconds;
+if (seconds1<10){
+  var addZeroToSeconds1 = "0" + seconds1;
 }
 else{
-  addZeroToSeconds = seconds;
+  addZeroToSeconds1 = seconds1;
 };
 
 
-if(hours>12){
-  var ampm= "PM";
+if(hours1>12){
+  var ampm1= "PM";
 }
 else{
-  ampm = "AM";
+  ampm1 = "AM";
 };
 
 
-var clock = "Home Time is: " + dayList[day] + " " + stdTime + " : " + addZeroToMinutes + " : " + addZeroToSeconds + " " + ampm;
+var clock1 = "Home Time is: " + dayList1[day1] + " " + stdTime1 + " : " + addZeroToMinutes1 + " : " + addZeroToSeconds1 + " " + ampm1;
 
 $(document).ready(function(){
-  $("#clockh1").html(clock);
+  $("#clockh1").html(clock1);
 });
 }
 $(document).ready(function(){
@@ -52,19 +55,19 @@ $(document).ready(function(){
 
 
 //testing
-var rawDate = new Date();
-var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-var day = rawDate.getDay();
-var hours = rawDate.getHours();
-var minutes = rawDate.getMinutes();
-var seconds = rawDate.getSeconds();
+var rawDate1 = new Date();
+var dayList1 = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var day1 = rawDate1.getDay();
+var hours1 = rawDate1.getHours();
+var minutes1 = rawDate1.getMinutes();
+var seconds1 = rawDate1.getSeconds();
 
-console.log(dayList);
+console.log(dayList1);
 
-console.log(day);
+console.log(day1);
 
-console.log(hours);
+console.log(hours1);
 
-console.log(minutes);
+console.log(minutes1);
 
-console.log(seconds);
+console.log(seconds1);
